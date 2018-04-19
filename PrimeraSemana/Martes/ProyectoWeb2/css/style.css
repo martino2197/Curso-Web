@@ -1,0 +1,48 @@
+
+
+#padding {
+	color: black;
+	background: green;
+	/*padding: 50px;*/
+	/*padding-top: 50px;
+	padding-right: 75px;
+	padding-left: 75px;
+	padding-bottom: 50px;*/
+	padding: 50px 75px 75px 50px;
+	margin: 0px; 
+}
+
+#border {
+	color: white;
+	background-color: red; 
+	/*background: blue; 
+	border-top: 500px;
+	border-right: 750px;
+	border-left: 750px;
+	border-bottom: 500px;*/
+	border: 60px solid blue;
+	margin: 0px;
+}
+
+
+#margin {
+	color: white;
+	background-color: pink;
+	/*margin-top: 50px;
+	margin-right: 75px;
+	margin-left: 75px;
+	margin-bottom: 50px;*/
+	margin: 0px; /*150px 15px 30px;*/ 
+}
+
+
+#img{
+	padding: 50px;
+	padding: 75px;
+	background: pink;
+	/*margin-top: 50px;
+	margin-right: 75px;
+	margin-left: 75px;
+	margin-bottom: 50px;*/
+	border: 100px solid black; 
+}
