@@ -1,0 +1,164 @@
+body
+{
+	background: #300800;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+/*Seelector de etiqueta*/
+h1{
+	color: #E0D8D8;
+	font-family: 'Dubiel', cursive;
+	text-align: center;
+
+}
+
+h2{
+	color: #E0D8D8;
+	font-family: 'Dubiel', cursive;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+
+.cuadrado{
+	width: 50px;
+	height: 50px;
+	background: #B07010;
+	animation-name: cuadrado; 
+	animation-duration: 5s;
+}
+
+.triangulo{
+	width: 0;
+	height: 0;
+	border-left:100px solid transparent;
+	border-right:100px solid transparent;
+	border-bottom:150px solid #C8B8C0;
+	position: relative;
+	animation-name: triangulo;
+	animation-duration: 5s;  
+}
+
+.circulo{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: #988080;
+	animation: circulo 1s linear 0s infinite;
+}
+
+.pacman{
+	margin: 50px 10px;
+}
+
+.pacman1{
+	background: #C8A870;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px 100px 0 0;
+	/*animation: pacman1 1s linear 0s infinite;*/
+	animation-name: pacman1;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+.pacman2{
+	background: #C8A870;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px;
+	/*animation: pacman2 1s linear 0s infinite;*/
+	animation-name: pacman2;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+.rectangulo{
+	width: 200px;
+	height: 100px;
+	background: #C8B8C0;
+	animation-name: rectangulo;
+	animation-delay: 5s;
+	animation-duration: 10s;
+}
+/*Realiza una transición de un rectánculo que cambie de ancho, tenga un retardo de 5 segundos, que su duración sea de 10 segundos.*/
+
+@keyframes cuadrado{
+	0%{background-color: #D89018;}
+	25%{background-color: #F8C878;}
+	50%{background-color: #D89018;}
+	100%{background-color: #F8C878;}
+}
+
+@keyframes triangulo{
+	0%{border-left: 100px solid transparent;border-right: 100px solid transparent; border-bottom: 150px solid #C8B8C0;
+	left: 0px; top: 0px;}
+
+	25%{border-left: 100px solid transparent; border-right: 100px solid transparent; border-bottom: 150px solid #C8B8C0;
+	left: 200px; top: 0px;}	
+	
+	50%{border-left: 100px solid transparent; border-right: 100px solid transparent; border-bottom: 150px solid #C8B8C0;
+	left: 200px; top: 200px;}
+
+	75%{border-left: 100px solid transparent; border-right: 100px solid transparent; border-bottom: 150px solid #C8B8C0;
+	left: 0px; top: 200px;}
+
+	100%{border-left: 100px solid transparent; border-right: 100px solid transparent; border-bottom: 150px solid #C8B8C0;
+	left: 0px; top: 0px;}
+}
+
+@keyframes circulo{
+	from{box-shadow: 
+		100px 0 0 0 #988080,
+		300px 0 0 0 #988080,
+		500px 0 0 0 #988080,
+		700px 0 0 0 #988080,
+		900px 0 0 0 #988080,
+		1100px 0 0 0 #988080,
+		1300px 0 0 0 #988080;}
+	to{box-shadow: 
+		0px 0 0 0 #988080
+		100px 0 0 0 #988080,
+		300px 0 0 0 #988080,
+		500px 0 0 0 #988080,
+		700px 0 0 0 #988080,
+		900px 0 0 0 #988080,
+		1100px 0 0 0 #988080;}
+}
+
+@keyframes pacman1{
+	from{
+		transform: rotate(0deg);
+		left: 0px;
+	}
+	to{
+		transform: rotate(-45deg);
+		left: 0px;
+	}
+}
+
+@keyframes pacman2{
+	from{
+		transform: rotate(0deg);
+		left: 0px;
+	}
+	to{
+		transform: rotate(45deg);
+		left: 0px;
+	}
+}
+
+@keyframes rectangulo{
+		0%{width: 200px; height: 100px; solid transparent; background: #C8B8C0;}
+
+	25%{width: 300px; height: 100px; solid transparent; background: #C8B8C0;}
+	
+	50%{width: 200px; height: 100px; solid transparent; background: #C8B8C0;}
+
+	75%{width: 300px; height: 100px; solid transparent; background: #C8B8C0;}
+
+	100%{width: 200px; height: 100px; solid transparent; background: #C8B8C0;}
+}
