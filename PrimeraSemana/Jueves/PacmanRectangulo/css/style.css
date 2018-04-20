@@ -55,6 +55,7 @@ div{
 }
 
 .pacman1{
+	position: relative;
 	background: #C8A870;
 	height: 100px;
 	width: 200px;
@@ -66,6 +67,7 @@ div{
 }
 
 .pacman2{
+	position: relative;
 	background: #C8A870;
 	height: 100px;
 	width: 200px;
@@ -132,13 +134,16 @@ div{
 @keyframes pacman1{
 	from{
 		transform: rotate(0deg);
-		left: 0px;
+		left: 0px 
+		
 	}
 	to{
 		transform: rotate(-45deg);
-		left: 0px;
+		left: 400px
 	}
-}
+}	
+
+
 
 @keyframes pacman2{
 	from{
@@ -147,7 +152,8 @@ div{
 	}
 	to{
 		transform: rotate(45deg);
-		left: 0px;
+		left: 400px;
+		
 	}
 }
 
